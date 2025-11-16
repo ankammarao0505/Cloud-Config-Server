@@ -1,1 +1,17 @@
-
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+microservice:
+ email-service:
+  endpoints:
+   endpoint:
+    uri: http://localhost:9090/banking/v1/sendAxisBankEmail
+ hdfc-bank:
+  endpoints:
+   endpoint:
+    uri: http://localhost:2001/customers/v1/findByAccountNumber
