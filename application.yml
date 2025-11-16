@@ -10,7 +10,7 @@ microservice:
  email-service:
   endpoints:
    endpoint:
-    uri: http://localhost:9090/banking/v1/sendAxisBankEmail
+    uri: http://localhost:9090/email/banking/v1/sendAxisBankEmail
  hdfc-bank:
   endpoints:
    endpoint:
